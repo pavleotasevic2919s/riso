@@ -5,5 +5,5 @@ WORKDIR /server
 RUN pip install --upgrade pip
 RUN pip install flask requests
 COPY . /server
-EXPOSE 5000
+EXPOSE 8050
 CMD ["flask","run","--host","0.0.0.0"]
